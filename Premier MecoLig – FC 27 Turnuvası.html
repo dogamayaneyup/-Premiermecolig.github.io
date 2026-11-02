@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Premier MecoLig – FC 27 Turnuvası</title>
+<style>
+:root{--bg:#0b0615;--bg2:#150c28;--card:#1b1033;--tx:#f3eefc;--mut:#a99bc7;--pu:#a855f7;--pk:#ff3ea5;--gd:#ffc933;--gr:#22e3a1;--rd:#ff4d6d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:radial-gradient(1200px 600px at 20% -10%,#3a1370 0,transparent 60%),radial-gradient(900px 500px at 100% 10%,#5b0f4e 0,transparent 55%),var(--bg);color:var(--tx);font-family:"Segoe UI",system-ui,Arial,sans-serif;line-height:1.55;min-height:100vh}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:6px;align-items:center;justify-content:center;flex-wrap:wrap;padding:10px;background:#0b0615cc;backdrop-filter:blur(8px);border-bottom:1px solid #ffffff14}
+nav a{color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:99px;font-weight:600;font-size:14px}nav a:hover{color:#fff;background:#ffffff14}
+main{max-width:980px;margin:auto;padding:0 16px 60px}
+.hero{text-align:center;padding:48px 0 24px}
+.crest{width:92px;height:92px;filter:drop-shadow(0 0 18px var(--pu))}
+h1{font-size:clamp(40px,9vw,78px);margin:6px 0 0;font-style:italic;font-weight:900;letter-spacing:-1px;line-height:1;background:linear-gradient(90deg,#fff,#d8b4ff 45%,var(--pk));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{letter-spacing:6px;color:var(--mut);font-weight:700;margin:10px 0 22px}
+.prize{display:inline-block;padding:14px 32px;border-radius:18px;border:2px solid var(--gd);background:linear-gradient(180deg,#2b1a05,#120a02);box-shadow:0 0 34px #ffc93355}
+.prize small{display:block;color:var(--gd);font-weight:800;letter-spacing:3px;font-size:13px}
+.prize b{font-size:clamp(34px,8vw,56px);color:var(--gd);text-shadow:0 0 18px #ffc93388}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:22px 0}
+.chip{padding:8px 16px;border-radius:99px;background:#ffffff0f;border:1px solid #ffffff1f;font-weight:600;font-size:14px}
+.btn{display:inline-block;border:0;cursor:pointer;color:#fff;font-weight:800;font-size:16px;padding:13px 28px;border-radius:12px;background:linear-gradient(90deg,var(--pu),var(--pk));box-shadow:0 6px 24px #a855f755;text-decoration:none;font-family:inherit}
+.btn:hover{filter:brightness(1.12)}.btn.sm{padding:7px 14px;font-size:13px;border-radius:9px}.btn.g{background:var(--gr);color:#04170f;box-shadow:none}.btn.r{background:var(--rd);box-shadow:none}.btn.o{background:#ffffff14;box-shadow:none}
+section{margin-top:44px}h2{font-size:28px;margin:0 0 16px}h2 span{color:var(--pk)}
+.card{background:linear-gradient(160deg,var(--card),var(--bg2));border:1px solid #ffffff17;border-radius:16px;padding:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card h3{margin:0 0 8px;color:var(--gd);font-size:17px}.card ul{margin:0;padding-left:18px;color:#ddd3f3}.card li{margin:3px 0}
+details{background:var(--card);border:1px solid #ffffff17;border-radius:12px;padding:14px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}details p{margin:10px 0 0;color:#ddd3f3}
+input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #ffffff2a;background:#0e0820;color:#fff;font-size:16px;font-family:inherit}
+select{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #ffffff2a;background:#0e0820;color:#fff;font-size:16px}
+label{display:block;margin:12px 0 6px;color:var(--mut);font-weight:600;font-size:14px}
+.msg{margin-top:12px;font-weight:600}.ok{color:var(--gr)}.er{color:var(--rd)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{padding:6px 14px;border-radius:99px;background:#a855f722;border:1px solid #a855f766;font-weight:700}
+.match{display:flex;align-items:center;gap:10px;padding:12px 14px;margin-bottom:8px;border-radius:12px;background:#ffffff0a;border:1px solid #ffffff14}
+.match i{color:var(--gd);font-style:normal;font-weight:900;min-width:34px}.match em{color:var(--pk);font-style:normal;font-weight:900;margin:0 auto}.match b{flex:1}.match b:last-child{text-align:right}
+table{width:100%;border-collapse:collapse}th,td{padding:9px 6px;text-align:left;border-bottom:1px solid #ffffff14;font-size:14px}th{color:var(--mut)}
+.st{padding:3px 10px;border-radius:99px;font-size:12px;font-weight:800}.st.bekliyor{background:#ffc93322;color:var(--gd)}.st.kabul{background:#22e3a122;color:var(--gr)}.st.red{background:#ff4d6d22;color:var(--rd)}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.scroll{overflow-x:auto}
+footer{text-align:center;color:var(--mut);padding:30px 16px;border-top:1px solid #ffffff14}footer a{color:var(--gr);font-weight:700}
+.hide{display:none}
+</style>
+</head>
+<body>
+<nav><a href="#bilgi">Bilgi</a><a href="#kayit">Kayıt</a><a href="#katilimcilar">Katılımcılar</a><a href="#kura">Kura</a><a href="#sss">SSS</a><a href="#yonetici">Yönetici</a></nav>
+<main>
+<header class="hero">
+<svg class="crest" viewBox="0 0 100 100"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs><path d="M50 4 94 20v34c0 22-20 36-44 44C26 90 6 76 6 54V20z" fill="#1b0b3a" stroke="url(#g)" stroke-width="4"/><path d="M26 62 20 36l16 12 14-20 14 20 16-12-6 26z" fill="#ffc933"/><rect x="26" y="66" width="48" height="8" rx="3" fill="#ffc933"/></svg>
+<h1>Premier MecoLig</h1>
+<div class="sub">FC 27 TURNUVASI</div>
+<div class="prize"><small>1. YE TAM</small><b>20.000 TL</b></div>
+<div class="chips"><span class="chip">📅 Tarih: Belirsiz</span><span class="chip">🎟 Katılım: 1 Sub</span><span class="chip">🎮 Tüm platformlar</span><span class="chip">♾ Kontenjan sınırı yok</span></div>
+<a class="btn" href="#kayit">Hemen Başvur</a>
+</header>
+
+<section id="bilgi"><h2>Turnuva <span>Bilgileri</span></h2>
+<div class="grid">
+<div class="card"><h3>🏆 Turnuva Sistemi</h3><ul><li>Eşleşmeler herkese açık kura ile belirlenir</li><li>Grup aşaması yok; seriyi kaybeden elenir</li><li>Elemeler BO3: 2 maç kazanan seriyi alır</li><li>Final BO5: 3 maç kazanan şampiyon olur</li></ul></div>
+<div class="card"><h3>⚙️ Maç Ayarları</h3><ul><li>Devreler 6 dakikadır</li><li>Oyun hızı varsayılan ayardır</li><li>Beraberlikte uzatma ve penaltılar oynanır</li></ul></div>
+<div class="card"><h3>⚽ Takım Seçimi</h3><ul><li>Yalnızca kulüp takımları kullanılabilir</li><li>Aynı takım iki oyuncu tarafından seçilebilir</li><li>Özel oluşturulmuş veya oyuncuları değiştirilmiş kadrolar kullanılamaz</li></ul></div>
+<div class="card"><h3>🎟 Katılım</h3><ul><li>Ücret: 1 sub (bireysel veya hediye)</li><li>Kayıt yalnızca bu site üzerinden</li><li>Başvurular yönetici tarafından onaylanır</li><li>Kick kullanıcı adınız ile listelenirsiniz</li></ul></div>
+</div></section>
+
+<section id="kayit"><h2>Turnuvaya <span>Kayıt Ol</span></h2>
+<div class="card"><label for="kn">Kick kullanıcı adı</label><input id="kn" maxlength="30" placeholder="örn. mecocann" autocomplete="off">
+<label for="pf">Platform</label><select id="pf"><option>PlayStation</option><option>Xbox</option><option>PC</option></select>
+<div class="row"><button class="btn" id="gonder">Talep Gönder</button></div><div class="msg" id="kmsg"></div>
+<p style="color:var(--mut);font-size:13px;margin:12px 0 0">Katılım ücreti 1 sub'dır. Talebiniz onaylandığında adınız katılımcı listesinde görünür.</p></div></section>
+
+<section id="katilimcilar"><h2>Onaylı <span>Katılımcılar</span> <small id="say" style="font-size:16px;color:var(--mut)"></small></h2>
+<div class="card"><div class="tags" id="liste"><span style="color:var(--mut)">Yükleniyor…</span></div></div></section>
+
+<section id="kura"><h2>Herkese Açık <span>Kura</span></h2><div class="card" id="kurakutu"><span style="color:var(--mut)">Kura henüz çekilmedi.</span></div></section>
+
+<section id="sss"><h2>Sık Sorulan <span>Sorular</span></h2>
+<details><summary>Katılmak için ne gerekiyor?</summary><p>Sitede Kick kullanıcı adınızla talep gönderin ve 1 sub (bireysel veya hediye) ile katılım ücretini tamamlayın. Talebiniz yönetici tarafından onaylanınca katılımcı olursunuz.</p></details>
+<details><summary>FC 27'ye sahip olmam gerekiyor mu?</summary><p>Hayır, oyuna sahip olmanız gerekmiyor.</p></details>
+<details><summary>Hangi platformlardan katılabilirim?</summary><p>Tüm platformlar katılabilir. Kayıt formunda platformunuzu seçmeniz yeterli.</p></details>
+<details><summary>Turnuva ne zaman ve kura nasıl çekilecek?</summary><p>Tarih henüz belirsiz, yayında duyurulacak. Kura bu sayfada herkesin görebileceği şekilde yayınlanır; katılımcı sınırı yoktur.</p></details>
+</section>
+
+<section id="yonetici"><h2>Yönetici <span>Paneli</span></h2>
+<div class="card" id="yp"><div id="giris"><label for="sif">Şifre</label><input id="sif" type="password" autocomplete="off"><div class="row"><button class="btn" id="girbtn">Giriş</button></div><div class="msg" id="amsg"></div></div>
+<div id="panel" class="hide">
+<div class="row" style="margin:0 0 12px"><button class="btn sm g" id="kurabtn">🎲 Kurayı Çek</button><button class="btn sm o" id="kurasil">Kurayı Sıfırla</button><button class="btn sm o" id="cikis">Çıkış</button></div>
+<div class="scroll"><table><thead><tr><th>Kick adı</th><th>Platform</th><th>Durum</th><th></th></tr></thead><tbody id="tb"></tbody></table></div></div></div></section>
+</main>
+<footer>Yayın: <a href="https://kick.com/mecocann" target="_blank" rel="noopener">kick.com/mecocann</a> · En iyiler burada buluşuyor!</footer>
+
+<script>
+const $=id=>document.getElementById(id);
+let db=null,kayitlar=[],admin=false;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const sha=async s=>[...new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode("mecolig:"+s)))].map(b=>b.toString(16).padStart(2,"0")).join("");
+function say(el,t,ok){el.textContent=t;el.className="msg "+(ok?"ok":"er")}
+
+function renderList(){
+ const ok=kayitlar.filter(k=>k.durum==="kabul");
+ $("say").textContent=ok.length?"("+ok.length+")":"";
+ $("liste").innerHTML=ok.length?ok.map(k=>'<span class="tag">'+esc(k.ad)+'</span>').join(""):'<span style="color:var(--mut)">Henüz onaylı katılımcı yok.</span>';
+ if(admin){$("tb").innerHTML=kayitlar.map(k=>'<tr><td><b>'+esc(k.ad)+'</b></td><td>'+esc(k.platform)+'</td><td><span class="st '+k.durum+'">'+k.durum.toUpperCase()+'</span></td><td><div class="row" style="margin:0"><button class="btn sm g" data-i="'+k.id+'" data-d="kabul">Kabul</button><button class="btn sm r" data-i="'+k.id+'" data-d="red">Red</button><button class="btn sm o" data-i="'+k.id+'" data-d="sil">Sil</button></div></td></tr>').join("")||'<tr><td colspan="4" style="color:var(--mut)">Henüz talep yok.</td></tr>'}
+}
+function renderKura(d){
+ if(!d||!d.maclar){$("kurakutu").innerHTML='<span style="color:var(--mut)">Kura henüz çekilmedi.</span>';return}
+ $("kurakutu").innerHTML='<div style="color:var(--mut);margin-bottom:10px">1. Tur eşleşmeleri</div>'+d.maclar.map((m,i)=>'<div class="match"><i>#'+(i+1)+'</i><b>'+esc(m[0])+'</b><em>VS</em><b>'+(m[1]?esc(m[1]):'<span style="color:var(--gd)">Bay geçer</span>')+'</b></div>').join("");
+}
+
+async function init(){
+ try{const c=await claude.use("db");db=c}catch(e){db=null}
+ if(!db){$("liste").innerHTML='<span class="er">Kayıt sistemi şu an kullanılamıyor.</span>';return}
+ db.collection("kayit").onSnapshot(s=>{kayitlar=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(a.t||0)-(b.t||0));renderList()},()=>{$("liste").textContent="Liste yüklenemedi."});
+ db.collection("kura").doc("current").onSnapshot(s=>renderKura(s.exists?s.data():null));
+}
+init();
+
+$("gonder").onclick=async()=>{
+ const ad=$("kn").value.trim().replace(/^@/,"");
+ if(!/^[\w.\-]{2,30}$/.test(ad))return say($("kmsg"),"Geçerli bir Kick kullanıcı adı girin.");
+ if(!db)return say($("kmsg"),"Kayıt sistemi şu an kullanılamıyor.");
+ if(kayitlar.some(k=>k.ad.toLowerCase()===ad.toLowerCase()&&k.durum!=="red"))return say($("kmsg"),"Bu kullanıcı adıyla zaten bir talep var.");
+ try{await db.collection("kayit").add({ad,platform:$("pf").value,durum:"bekliyor",t:Date.now()});$("kn").value="";say($("kmsg"),"Talebiniz alındı! Onaylandığında listede görünecek.",true)}catch(e){say($("kmsg"),"Gönderilemedi, tekrar deneyin.")}
+};
+
+$("girbtn").onclick=async()=>{
+ const p=$("sif").value;if(!db)return say($("amsg"),"Sistem kullanılamıyor.");
+ if(p.length<6)return say($("amsg"),"Şifre en az 6 karakter olmalı.");
+ const ref=db.collection("ayar").doc("admin"),h=await sha(p),s=await ref.get();
+ if(!s.exists){await ref.set({h});say($("amsg"),"İlk şifre belirlendi.",true);openPanel()}
+ else if(s.data().h===h)openPanel();else say($("amsg"),"Şifre yanlış.");
+};
+function openPanel(){admin=true;$("giris").classList.add("hide");$("panel").classList.remove("hide");renderList()}
+$("cikis").onclick=()=>{admin=false;$("sif").value="";$("panel").classList.add("hide");$("giris").classList.remove("hide");$("amsg").textContent=""};
+$("tb").onclick=async e=>{
+ const b=e.target.closest("button");if(!b)return;const r=db.collection("kayit").doc(b.dataset.i);
+ try{b.dataset.d==="sil"?await r.delete():await r.update({durum:b.dataset.d})}catch(x){alert("İşlem başarısız.")}
+};
+$("kurabtn").onclick=async()=>{
+ const a=kayitlar.filter(k=>k.durum==="kabul").map(k=>k.ad);
+ if(a.length<2)return alert("Kura için en az 2 onaylı katılımcı gerekli.");
+ for(let i=a.length-1;i>0;i--){const j=crypto.getRandomValues(new Uint32Array(1))[0]%(i+1);[a[i],a[j]]=[a[j],a[i]]}
+ const maclar=[];for(let i=0;i<a.length;i+=2)maclar.push([a[i],a[i+1]||null]);
+ await db.collection("kura").doc("current").set({maclar,t:Date.now()});
+};
+$("kurasil").onclick=async()=>{if(confirm("Kura silinsin mi?"))await db.collection("kura").doc("current").delete()};
+</script>
+</body>
+</html>
